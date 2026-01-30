@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  [data-theme='light'] .destaque {
+    @apply text-primaryDark;
+  }
+
+  [data-theme='dark'] .destaque {
+    @apply text-primaryLight;
+  }
+}
+
+/* default (light) */
+.hero-underline {
+  color: rgb(79 70 229 / 0.3); /* equivalente a text-accent/30 */
+}
+
+/* dark mode */
+[data-theme='dark'] .hero-underline {
+  color: rgba(164, 147, 147, 0.35);
+}
+body {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+/* inicio da shapeDiv */
+.custom-shape-divider-bottom-1720203688 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1720203688 svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 78px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1720203688 .shape-fill {
+  fill: #fff;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1720203688 svg {
+    width: calc(145% + 1.3px);
+    height: 41px;
+  }
+}
+/* fim da shapeDiv */
+
+.unfix-ios-bg {
+  @supports (-webkit-touch-callout: none) {
+    background-attachment: initial !important;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+  }
+}
+
+.animate-fade-in {
+  opacity: 1;
+  visibility: visible;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-fade-out {
+  opacity: 1;
+  visibility: visible;
+  animation: fadeOut 1s ease-in-out;
+}
+
+.p-dialog-header {
+  padding-bottom: 0px;
+}
+
+.seu-texto,
+.p-component {
+  white-space: normal !important;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.text-image {
+  background-image: url('../src/assets/imgs/hero/bgInstagram.webp');
+  background-size: contain;
+  background-position: top;
+
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  display: inline-block;
+}
