@@ -52,16 +52,16 @@ export default function Index() {
 
         <main>
           {/* LCP — NÃO usar lazy */}
-          <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={true} />
+          <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
             <FeaturesNovaTemplate
               colorMode={colorMode}
-              frasesDestaque={false}
+              frasesDestaque={true}
               accordion={false}
             />
-            <Speed colorMode={colorMode} />
-            {/* <Important colorMode={colorMode} /> */}
+            {/* <Speed colorMode={colorMode} /> */}
+            <Important colorMode={colorMode} />
 
             <AboutNovoTemplate
               colorMode={colorMode}

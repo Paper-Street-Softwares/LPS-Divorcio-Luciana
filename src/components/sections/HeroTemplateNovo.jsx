@@ -13,6 +13,7 @@ import {
   Users,
   Split,
   FileText,
+  FileX,
 } from 'lucide-react'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
@@ -132,7 +133,7 @@ function HeroTemplateNovo({
               >
                 <span>
                   {/* <MapPin className="w-4 h-4" /> */}
-                  <Split width={14} />
+                  <FileX width={14} />
                 </span>
                 {content.texts.hero.miniTag}
               </div>
@@ -199,19 +200,21 @@ function HeroTemplateNovo({
                 <span
                   className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
                 >
-                  <span>
-                    <Check />
-                  </span>{' '}
+                  <div className="relative flex ">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+                  </div>
                   {content.texts.hero.obsHero.text}
                 </span>
 
                 {obsTwo && (
                   <span
-                    className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
+                    className={`font-secondFont font-light flex gap-2 items-start ${textOpacity}`}
                   >
-                    <span>
-                      <FileText />
-                    </span>{' '}
+                    <div className="relative flex ">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+                    </div>
                     {content.texts.hero.obsHero.textTwo}
                   </span>
                 )}

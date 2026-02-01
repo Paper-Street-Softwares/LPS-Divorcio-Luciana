@@ -114,9 +114,9 @@ const content = {
       miniTag: 'DIVÓRCIO SEM COMPLICAÇÃO',
       title: (
         <h1>
-          Precisando de uma{' '}
+          Precisando de uma advogada para seu{' '}
           <span className="destaque relative italic font-light">
-            advogada{' '}
+            divórcio
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -144,7 +144,7 @@ const content = {
               </svg>
             </span>
           </span>
-          para seu divórcio?
+          ?
         </h1>
       ),
       subtitle: (
@@ -188,44 +188,49 @@ const content = {
       },
     },
     important: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
+      miniTag: 'Atenção',
+      title: 'O que é importante saber sobre seu divórcio',
       cards: {
         card1: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Dá pra me divorciar sem ir pra Justiça?',
+          paragraph:
+            'Sim. Quando existe acordo e não há filhos menores ou incapazes, o divórcio pode ser feito direto em cartório, de forma rápida.',
         },
         card2: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Esse divórcio demora muito?',
+          paragraph:
+            'Depende. Quando é amigável, costuma ser bem mais rápido. Quando vira briga, o processo pode levar mais tempo.',
         },
         card3: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'E se a outra parte não quiser o divórcio?',
+          paragraph:
+            'Mesmo assim o divórcio acontece. Nesse caso, ele é feito pela Justiça, com acompanhamento jurídico pra proteger seus direitos.',
         },
         card4: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Preciso dividir tudo agora ou posso resolver depois?',
+          paragraph:
+            'Você pode se divorciar primeiro e deixar a partilha dos bens pra um outro momento, se for melhor pra você.',
         },
       },
-      fraseObs: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      fraseObs:
+        'Entre em contato conosco e lhe daremos todo o suporte necessário',
+      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
     },
     features: {
-      miniTag: 'Seu divórcio não precisa ser complicado',
+      miniTag: 'COMO POSSO TE AJUDAR',
       title: (
         <h1>
-          Sabemos que o momento do divórcio é
-          <span className="destaque italic font-light"> delicado</span> e,
-          muitas vezes, doloroso.
+          Atuação
+          <span className="destaque italic font-light"> jurídica</span> em
+          momentos decisivos
         </h1>
       ),
       subtitle:
-        'Por isso, oferecemos um atendimento humanizado, rápido e totalmente online, para que você resolva tudo com tranquilidade e sem burocracia. Você não precisa enfrentar filas, deslocamentos ou desgaste emocional. Nós cuidamos de tudo para você.',
+        'Orientação clara para tomar decisões importantes com mais segurança',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: 'A_Definir',
-      subtitleMessageFeature: 'A_Definir',
+      titleMessageFeature: '',
+      subtitleMessageFeature: 'Quando seguir em frente exige orientação',
       cards: {
         card1: {
           title: 'Divórcio extrajudicial',
