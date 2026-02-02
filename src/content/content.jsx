@@ -230,7 +230,12 @@ const content = {
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
       titleMessageFeature: '',
-      subtitleMessageFeature: 'Quando seguir em frente exige orientação',
+      subtitleMessageFeature: (
+        <p>
+          Quando <span className="font-bold">seguir em frente</span> exige
+          orientação
+        </p>
+      ),
       cards: {
         card1: {
           title: 'Divórcio extrajudicial',

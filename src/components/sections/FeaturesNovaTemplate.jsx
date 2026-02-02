@@ -1,19 +1,10 @@
 import React, { useRef, useState } from 'react'
-import { motion } from 'framer-motion'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
 import SectionWrapper from '../sectionElements/SectionWrapper'
-import ButtonReflexo from '../interactives/ButtonReflexo'
 import { ArrowLeft, ArrowRight, Phone, Scale } from 'lucide-react'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
 import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import { Button } from 'primereact/button'
-
-import Accordion from '@mui/material/Accordion'
-import AccordionSummary from '@mui/material/AccordionSummary'
-import AccordionDetails from '@mui/material/AccordionDetails'
-import Typography from '@mui/material/Typography'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 const features = Object.values(content.texts.features.cards)
 
@@ -116,10 +107,10 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
                     <div
                       className={`absolute -bottom-6 -left-6 ${bgObservation} ${textObservation} p-8 rounded-tr-3xl rounded-bl-3xl shadow-xl max-w-xs`}
                     >
-                      <p className="font-secondFont text-2xl font-bold mb-2">
+                      <p className="font-secondFont text-title4 font-bold mb-2">
                         {content.texts.features.titleMessageFeature}
                       </p>
-                      <p className="text-sm font-secondFont font-light">
+                      <p className="text-lg font-secondFont font-light">
                         {content.texts.features.subtitleMessageFeature}
                       </p>
                     </div>
