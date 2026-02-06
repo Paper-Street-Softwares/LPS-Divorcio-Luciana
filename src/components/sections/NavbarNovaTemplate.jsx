@@ -84,6 +84,7 @@ function NavbarNovaTemplate({
               // hashSpy={true}
               className="cursor-pointer"
               aria-label="Link de retorno a Hero"
+              href="/home"
             >
               <img
                 src={content.texts.navbar.logo.img}
@@ -98,22 +99,39 @@ function NavbarNovaTemplate({
 
           {/* Desktop Nav */}
           <div className="hidden desktop1:flex items-center gap-8 text-sm font-secondFont font-medium">
-            {labels.map((item, index) => (
-              <Link
-                to={ids[index]}
-                aria-label={`Link para ${item}`}
-                smooth={true}
-                duration={500}
-                offset={-90}
-                spy={true}
-                hashSpy={true}
-                tag="a"
-                href={`#${ids[index]}`}
-                className={`cursor-pointer ${hoverLinks} bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
-              >
-                {item}
-              </Link>
-            ))}
+            {labels.map((item, index) => {
+              const id = ids[index]
+
+              return (
+                <ul>
+                  {' '}
+                  <li key={id}>
+                    <a
+                      href={`#${id}`}
+                      aria-label={`Link para ${item}`}
+                      title={item}
+                      data-track={id}
+                      className={`cursor-pointer ${hoverLinks} bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
+                      onClick={(e) => {
+                        e.preventDefault()
+                        const el = document.getElementById(id)
+                        if (el) {
+                          const yOffset = -90
+                          const y =
+                            el.getBoundingClientRect().top +
+                            window.scrollY +
+                            yOffset
+
+                          window.scrollTo({ top: y, behavior: 'smooth' })
+                        }
+                      }}
+                    >
+                      {item}
+                    </a>
+                  </li>
+                </ul>
+              )
+            })}
             <ButtonReflexo
               label="Contato"
               link={content.texts.links.ctaWhatsapp}
@@ -164,22 +182,39 @@ function NavbarNovaTemplate({
                 <div
                   className={`flex flex-col gap-6 max-w-[500px] text-center items-center p-4 text-lg mx-auto font-secondFont font-medium border-l border-r border-b border-primary/20 rounded-md ${backgrondMode}`}
                 >
-                  {labels.map((item, index) => (
-                    <Link
-                      to={ids[index]}
-                      aria-label={`Link para ${item}`}
-                      smooth={true}
-                      duration={500}
-                      offset={-90}
-                      spy={true}
-                      hashSpy={true}
-                      tag="a"
-                      href={`#${ids[index]}`}
-                      className={`cursor-pointer transition-all w-full ${textOpacity}`}
-                    >
-                      {item}
-                    </Link>
-                  ))}
+                  {labels.map((item, index) => {
+                    const id = ids[index]
+
+                    return (
+                      <ul>
+                        {' '}
+                        <li key={id}>
+                          <a
+                            href={`#${id}`}
+                            aria-label={`Link para ${item}`}
+                            title={item}
+                            data-track={id}
+                            className={`cursor-pointer bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity}`}
+                            onClick={(e) => {
+                              e.preventDefault()
+                              const el = document.getElementById(id)
+                              if (el) {
+                                const yOffset = -90
+                                const y =
+                                  el.getBoundingClientRect().top +
+                                  window.scrollY +
+                                  yOffset
+
+                                window.scrollTo({ top: y, behavior: 'smooth' })
+                              }
+                            }}
+                          >
+                            {item}
+                          </a>
+                        </li>
+                      </ul>
+                    )
+                  })}
                   <ButtonReflexo
                     icon={
                       <svg
