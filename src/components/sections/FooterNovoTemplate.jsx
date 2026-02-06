@@ -117,24 +117,36 @@ function FooterNovoTemplate({
                     Links Rápidos
                   </h1>
                   <ul className="space-y-4 font-secondFont font-light">
-                    {labels.map((item, index) => (
-                      <li key={item}>
-                        <Link
-                          to={ids[index]}
-                          aria-label={`Link para ${item}`}
-                          smooth={true}
-                          duration={500}
-                          offset={-90}
-                          spy={true}
-                          hashSpy={true}
-                          tag="a"
-                          href={`#${ids[index]}`}
-                          className="cursor-pointer bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px]"
-                        >
-                          {item}
-                        </Link>
-                      </li>
-                    ))}
+                    {labels.map((item, index) => {
+                      const id = ids[index]
+
+                      return (
+                        <li key={id}>
+                          <a
+                            href={`#${id}`}
+                            aria-label={`Link para ${item}`}
+                            title={item}
+                            data-track={id}
+                            className="cursor-pointer bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px]"
+                            onClick={(e) => {
+                              e.preventDefault()
+                              const el = document.getElementById(id)
+                              if (el) {
+                                const yOffset = -90
+                                const y =
+                                  el.getBoundingClientRect().top +
+                                  window.scrollY +
+                                  yOffset
+
+                                window.scrollTo({ top: y, behavior: 'smooth' })
+                              }
+                            }}
+                          >
+                            {item}
+                          </a>
+                        </li>
+                      )
+                    })}
                   </ul>
                 </div>
               </div> */}
