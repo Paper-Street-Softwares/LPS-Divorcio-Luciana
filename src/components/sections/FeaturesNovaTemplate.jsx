@@ -5,6 +5,7 @@ import SectionWrapper from '../sectionElements/SectionWrapper'
 import { ArrowLeft, ArrowRight, Phone, Scale } from 'lucide-react'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
 import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import ButtonReflexo from '../interactives/ButtonReflexo'
 
 const features = Object.values(content.texts.features.cards)
 
@@ -116,7 +117,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
                     </div>
                   )}
                 </MotionDivDownToUp>
-                {/* <MotionDivDownToUp>
+                <MotionDivDownToUp>
                   <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-start desktop1:m-auto">
                     <ButtonReflexo
                       icon={
@@ -145,7 +146,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
                       className="text-white"
                     />
                   </div>
-                </MotionDivDownToUp> */}
+                </MotionDivDownToUp>
               </div>
 
               {/* Conteúdo das features */}

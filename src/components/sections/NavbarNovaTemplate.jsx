@@ -76,14 +76,24 @@ function NavbarNovaTemplate({
             }`}
           >
             {' '}
-            <img
-              src={content.texts.navbar.logo.img}
-              alt={content.texts.navbar.logo.alt}
-              className="w-[100%]"
-              width={160}
-              height={102}
-              fetchPriority="high"
-            />
+            <Link
+              smooth={true}
+              duration={500}
+              offset={-90}
+              // spy={true}
+              // hashSpy={true}
+              className="cursor-pointer"
+              aria-label="Link de retorno a Hero"
+            >
+              <img
+                src={content.texts.navbar.logo.img}
+                alt={content.texts.navbar.logo.alt}
+                className="w-[100%]"
+                width={160}
+                height={102}
+                fetchPriority="high"
+              />
+            </Link>{' '}
           </div>
 
           {/* Desktop Nav */}

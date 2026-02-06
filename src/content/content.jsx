@@ -26,6 +26,7 @@ import {
   Check,
   ClipboardCheck,
   Handshake,
+  PieChart,
 } from 'lucide-react'
 import { Users } from 'lucide-react'
 import { FileText } from 'lucide-react'
@@ -111,12 +112,12 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'DIVÓRCIO SEM COMPLICAÇÃO',
+      miniTag: 'PREVIDENCIÁRIO, FAMÍLIA E SUCESSÕES ',
       title: (
         <h1>
-          Precisando de uma advogada para seu{' '}
+          Precisando de uma{' '}
           <span className="destaque relative italic font-light">
-            divórcio
+            advogada
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -143,14 +144,15 @@ const content = {
                 />
               </svg>
             </span>
-          </span>
-          ?
+          </span>{' '}
+          para proteger seus direitos?
         </h1>
       ),
       subtitle: (
         <p>
-          Orientação jurídica especializada para resolver seu divórcio de forma
-          clara, organizada e sem desgaste emocional.
+          Orientação jurídica clara e especializada para resolver questões
+          familiares, sucessórias e previdenciárias com segurança e
+          tranquilidade.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -159,12 +161,12 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Quero resolver meu divórcio agora',
+      ctaButtonText: 'Falar com a advogada',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Atendimento 100% online e sigiloso',
+        text: 'Atendimento 100% online e confidencial',
         textTwo: 'Com orientação de advogada especializada',
       },
       secondaryCta: 'Contato',
@@ -189,58 +191,53 @@ const content = {
     },
     important: {
       miniTag: 'Atenção',
-      title: 'O que é importante saber sobre seu divórcio',
+      title: 'O que é importante saber sobre seus direitos',
       cards: {
         card1: {
-          title: 'Dá pra me divorciar sem ir pra Justiça?',
+          title: 'Posso pedir pensão ou guarda mesmo sem acordo?',
           paragraph:
-            'Sim. Quando existe acordo e não há filhos menores ou incapazes, o divórcio pode ser feito direto em cartório, de forma rápida.',
+            'Sim. Quando não há consenso, é possível recorrer à Justiça para definir pensão alimentícia e guarda, sempre priorizando o melhor interesse da criança.',
         },
         card2: {
-          title: 'Esse divórcio demora muito?',
+          title: 'Inventário precisa ser sempre na Justiça?',
           paragraph:
-            'Depende. Quando é amigável, costuma ser bem mais rápido. Quando vira briga, o processo pode levar mais tempo.',
+            'Não. Quando há acordo entre os herdeiros e não existem menores ou incapazes, o inventário pode ser feito em cartório, de forma mais rápida e menos desgastante.',
         },
         card3: {
-          title: 'E se a outra parte não quiser o divórcio?',
+          title: 'Quem tem direito ao BPC/LOAS?',
           paragraph:
-            'Mesmo assim o divórcio acontece. Nesse caso, ele é feito pela Justiça, com acompanhamento jurídico pra proteger seus direitos.',
+            'Pessoas idosas ou com deficiência que comprovem baixa renda podem ter direito ao benefício, mesmo sem nunca terem contribuído com o INSS.',
         },
         card4: {
-          title: 'Preciso dividir tudo agora ou posso resolver depois?',
+          title: 'Salário-maternidade pode ser negado?',
           paragraph:
-            'Você pode se divorciar primeiro e deixar a partilha dos bens pra um outro momento, se for melhor pra você.',
+            'Sim, mas muitas negativas são indevidas. Com a orientação correta, é possível solicitar o benefício ou até reverter a negativa do INSS.',
         },
       },
       fraseObs:
-        'Entre em contato conosco e lhe daremos todo o suporte necessário',
-      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
+        'Cada caso tem detalhes que fazem toda a diferença. Um atendimento jurídico adequado evita erros e prejuízos.',
+      ctaButtonText: 'Falar conosco agora',
     },
     features: {
       miniTag: 'COMO POSSO TE AJUDAR',
       title: (
         <h1>
           Atuação
-          <span className="destaque italic font-light"> jurídica</span> em
-          momentos decisivos
+          <span className="destaque italic font-light"> jurídica</span> nos
+          momentos que mais importam
         </h1>
       ),
       subtitle:
-        'Orientação clara para tomar decisões importantes com mais segurança',
+        'Orientação jurídica clara e humana para proteger seus direitos e evitar decisões que podem gerar prejuízos no futuro.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '',
-      subtitleMessageFeature: (
-        <p>
-          Quando <span className="font-bold">seguir em frente</span> exige
-          orientação
-        </p>
-      ),
+      titleMessageFeature: '100%',
+      subtitleMessageFeature: 'focado em soluções',
       cards: {
         card1: {
-          title: 'Divórcio extrajudicial',
+          title: 'Divórcio e União Estável',
           subtitle:
-            'Resolvido em cartório, de forma rápida e sem processo judicial.',
+            'Encerramento jurídico claro, com proteção dos seus direitos.',
           description: (
             <div>
               A_Definir
@@ -254,9 +251,9 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Divórcio consensual',
+          title: 'Pensão Alimentícia e Guarda',
           subtitle:
-            'Quando há acordo entre as partes, o divórcio acontece de forma simples e menos desgastante.',
+            'Segurança jurídica para decisões que envolvem seus filhos.',
           description: (
             <div>
               A_Definir
@@ -265,14 +262,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Handshake />,
+          icon: <Users />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'Divórcio judicial',
-          subtitle:
-            'Indicado quando não há acordo, com acompanhamento jurídico para proteger seus direitos.',
+          title: 'Inventário e Partilha de Bens',
+          subtitle: 'Resolução ágil de heranças, com menos conflitos.',
           description: (
             <div>
               A_Definir <br />
@@ -280,14 +276,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Scale />,
+          icon: <PieChart />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'Divórcio com ou sem filhos',
-          subtitle:
-            'Orientação completa, com atenção especial às questões que envolvem filhos e responsabilidades.',
+          title: 'Salário-Maternidade',
+          subtitle: 'Apoio jurídico para garantir o benefício.',
           description: (
             <div>
               A_Definir
@@ -296,14 +291,13 @@ const content = {
               <br />
             </div>
           ),
-          icon: <Users />,
+          icon: <Baby />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: 'Divórcio com partilha de bens',
-          subtitle:
-            'Análise e divisão justa dos bens, garantindo segurança em cada etapa do processo.',
+          title: 'BPC/LOAS',
+          subtitle: 'Orientação especializada para acesso ao benefício.',
           description: (
             <div>
               A_Definir
@@ -312,31 +306,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
-              <path d="M12 18V6" />
-            </svg>
-          ),
+          icon: <Gavel />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: 'Divórcio sem partilha imediata',
-          subtitle:
-            'Possibilidade de se divorciar agora e resolver a partilha em um momento posterior.',
+          title: 'Auxílio-Reclusão',
+          subtitle: 'Proteção jurídica aos dependentes.',
           description: (
             <div>
               A_Definir
@@ -367,7 +343,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Falar com uma advogada',
     },
     maps: {
       minitag: 'A_Definir',
@@ -391,21 +367,34 @@ const content = {
       SecondPartTitle: '',
       subtitle: '',
       paragraph: (
-        <div>
-          <span className="flex gap-2 items-center">
-            <Check /> Atuação especializada em Direito de Família
-          </span>
-          <span className="flex gap-2 items-center">
-            <Check /> Experiência em divórcios
-          </span>
-          <span className="flex gap-2 items-center">
-            <Check /> Atendimento ágil e personalizado
-          </span>
-          <span className="flex gap-2 items-center">
-            <Check /> Transparência em todas as etapas
-          </span>
-        </div>
+        <>
+          Sabemos que questões familiares e previdenciárias surgem em momentos
+          delicados. Por isso, nossa atuação é focada em orientar você com
+          clareza, empatia e estratégia, evitando conflitos desnecessários e
+          protegendo seus direitos desde o primeiro atendimento.
+          <br />
+          <br />
+          Atuamos com Direito de Família, Sucessões e Previdenciário, oferecendo
+          acompanhamento próximo, atendimento ágil e total transparência em cada
+          etapa, para que você se sinta seguro em todas as decisões.
+        </>
       ),
+      // paragraph: (
+      //   <div>
+      //     <span className="flex gap-2 items-center">
+      //       <Check /> Atuação especializada em Direito de Família
+      //     </span>
+      //     <span className="flex gap-2 items-center">
+      //       <Check /> Experiência em divórcios
+      //     </span>
+      //     <span className="flex gap-2 items-center">
+      //       <Check /> Atendimento ágil e personalizado
+      //     </span>
+      //     <span className="flex gap-2 items-center">
+      //       <Check /> Transparência em todas as etapas
+      //     </span>
+      //   </div>
+      // ),
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
@@ -506,8 +495,8 @@ const content = {
       miniTag: 'Fale agora com uma advogada',
       title: (
         <h1>
-          Se você está pensando em se divorciar ou precisa de orientação, fale
-          conosco agora.
+          Se você precisa de orientação jurídica em questões familiares ou
+          previdenciárias, fale conosco agora.
         </h1>
       ),
       subtitle: (
@@ -518,23 +507,23 @@ const content = {
       container: {
         label1: {
           icon: <Check />,
-          text: ' Orientação clara sobre seus direitos no divórcio',
+          text: 'Orientação clara sobre seus direitos em questões familiares e previdenciárias',
         },
         label2: {
           icon: <Check />,
-          text: ' Atendimento humanizado e sigiloso com advogada especializada',
+          text: 'Atendimento humanizado e sigiloso com advogada especializada',
         },
         label3: {
           icon: <Check />,
-          text: ' Divórcio rápido, sem audiências e sem desgaste emocional',
+          text: 'Soluções jurídicas ágeis, sem complicação e sem desgaste desnecessário',
         },
         label4: {
           icon: <Check />,
-          text: ' Acompanhamento rápido pelo WhatsApp, do início ao fim',
+          text: 'Acompanhamento direto pelo WhatsApp, do início ao fim',
         },
         label5: {
           icon: <Check />,
-          text: ' Segurança para encerrar esse ciclo e seguir em frente',
+          text: 'Segurança para tomar decisões e seguir com mais tranquilidade',
         },
       },
       // subtitleDireita: (
@@ -545,7 +534,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Quero iniciar meu divórcio',
+      ctaButtonText: 'Quero falar com uma advogada',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },

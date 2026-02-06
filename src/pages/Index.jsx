@@ -40,6 +40,9 @@ export default function Index() {
         <main>
           {/* LCP — NÃO usar lazy */}
           <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
+          <Suspense>
+            <Important colorMode={colorMode} />
+          </Suspense>
           <Suspense fallback={null}>
             <FeaturesNovaTemplate
               colorMode={colorMode}
@@ -47,9 +50,7 @@ export default function Index() {
               accordion={false}
             />
           </Suspense>
-          <Suspense>
-            <Important colorMode={colorMode} />
-          </Suspense>
+
           <Suspense>
             <AboutNovoTemplate
               colorMode={colorMode}
