@@ -117,7 +117,7 @@ const content = {
         <h1>
           Precisando de uma{' '}
           <span className="destaque relative italic font-light">
-            advogada
+            Advogada
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -161,13 +161,13 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com a advogada',
+      ctaButtonText: 'Falar com a Advogada',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
         text: 'Atendimento 100% online e confidencial',
-        textTwo: 'Com orientação de advogada especializada',
+        textTwo: 'Com orientação de Advogada especializada',
       },
       secondaryCta: 'Contato',
       images: {
@@ -232,7 +232,7 @@ const content = {
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
       titleMessageFeature: '100%',
-      subtitleMessageFeature: 'focado em soluções',
+      subtitleMessageFeature: 'focada em soluções',
       cards: {
         card1: {
           title: 'Divórcio e União Estável',
@@ -343,7 +343,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'Falar com uma advogada',
+      ctaButtonText: 'Falar com uma Advogada',
     },
     maps: {
       minitag: 'A_Definir',
@@ -411,7 +411,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar diretamente com a advogada',
+      ctaButtonText: 'Falar diretamente com a Advogada',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -492,7 +492,7 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'Fale agora com uma advogada',
+      miniTag: 'Fale agora com uma Advogada',
       title: (
         <h1>
           Se você precisa de orientação jurídica em questões familiares ou
@@ -511,7 +511,7 @@ const content = {
         },
         label2: {
           icon: <Check />,
-          text: 'Atendimento humanizado e sigiloso com advogada especializada',
+          text: 'Atendimento humanizado e sigiloso com Advogada especializada',
         },
         label3: {
           icon: <Check />,
@@ -534,7 +534,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Quero falar com uma advogada',
+      ctaButtonText: 'Quero falar com uma Advogada',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
