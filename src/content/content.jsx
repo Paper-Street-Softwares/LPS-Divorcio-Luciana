@@ -232,7 +232,7 @@ const content = {
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
       titleMessageFeature: '100%',
-      subtitleMessageFeature: 'focado em soluções',
+      subtitleMessageFeature: 'focada em soluções',
       cards: {
         card1: {
           title: 'Divórcio e União Estável',
